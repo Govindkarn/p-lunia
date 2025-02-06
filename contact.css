@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
 }
+/* .top-bar */
 .top-bar{
    height: 28px;
    background-image: linear-gradient(to right, #0796fe, #092a49);
@@ -33,12 +34,13 @@ body{
     border-right: 1px solid #f1fbff;
 }
 #facebook:hover,#instagram:hover,#linkedin:hover{
-    color: blue;
+    color: rgb(81, 160, 239);
 }
 #facebook,#linkedin{
     padding: 5px 15px;
     border-left: 1px solid #f1fbff;
 }
+/* .navbar */
 .navbar{
     overflow: hidden;
     position: sticky;
@@ -61,13 +63,9 @@ body{
     padding: 20px;
   }
   nav ul li a:hover {
-    color: lightblue;
+    color: rgb(131, 77, 246);
   }
-  .container{
-    display: flex;
-    background: #092a49;
-    color: #ffffff;
-  }
+  /* main-section */
   .details{
     display: flex;
     margin-left: 250px;
@@ -121,6 +119,12 @@ body{
     margin-right: 15px;
     font-size: 18px;
     color: #eeeeee;
+  }
+  /* footer-part */
+  .container{
+    display: flex;
+    background: #092a49;
+    color: #ffffff;
   }
   .footer-contact{
     position: relative;
