@@ -5,137 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P. Lunia & Associates</title>
     <script src="https://kit.fontawesome.com/e7119e15f5.js" crossorigin="anonymous"></script>
-    <style>
-        .top-bar{
-            height: 35px;
-            padding-left: 100px;
-            position: relative;
-            background-image: linear-gradient(to right, #0796fe, #092a49);
-        }
-        .top-bar-left{
-            display: flex;
-            /* flex-wrap: wrap; */
-            padding-top: 10px;
-            align-items: center;
-            color: aliceblue;
-            justify-content: flex-start;
-            font-size: 15px;
-        }
-        .text{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-            height: 20px;
-            padding: 0 10px;
-            /* padding-left: 50px; */
-            text-align: center;
-            border-left: 1px solid aliceblue;
-        }
-        .text i{
-            padding-right: 10px;
-        }
-        .text h2{
-            font-size: 19px;
-        }
-        .text p{
-            font-size: 19px;
-            padding-left: 10px;
-        }
-        .top-bar-right{
-            display: flex;
-            justify-content: flex-end;
-        }
-        .social{
-            display: flex;
-        }
-        .social a{
-            display: flex;  
-            /* align-items: center;  */
-            justify-content: center; 
-            width: 35px; 
-            height: 20px;
-            font-size: 20px;
-            text-decoration: none;
-            color: aliceblue;
-            border-right: 1px solid aliceblue; 
-            /* padding-bottom: 1px; */
-        }
-        .navbar{
-            background-color: #092a49;
-            color: aliceblue;
-            padding: 15px;
-        }
-        .navbar-toggler{
-            color: rgba(255, 255, 255, .5);;
-            border-color: rgba(255, 255, 255, .1);
-            padding: .25rem .75rem;
-            font-size: 1.25rem;
-            line-height: 1;
-            background-color: transparent;
-            border: 1px solid transparent;
-            border-radius: .25rem;
-        }
-        .navbar-toggler-icon{
-            width: 1em;
-            height: 1em;
-            background-size: 100% 100%;
-            background: no-repeat center center;
-            vertical-align: middle;
-        }
-        .footer{
-            background-color: #092a49;
-            color: aliceblue;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hello</h1>
     <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <div class="text">
-                <i class="fa-regular fa-clock"></i>
-                <h2>9:00 AM - 7:30 PM</h2>
-                <p>Sun- Fri</p>
-            </div>
-            <div class="text">
-                <i class="fa-solid fa-phone"></i>
-                <h2>+977 9852075322</h2>
-                <p>For Appointment</p>
-            </div>
-        </div>
-        <div class="top-bar-right">
-            <div class="social">
-                <a href="facebook.com">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="linkedin.com">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="instagram.com">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+    <header class="top-bar">
+        <span class="time">
+            <i class="fa-regular fa-clock"></i>
+            <span>9:00 AM - 7:30 PM Sun-Fri</span>
+        </span>
+        <span class="num">
+            <i class="fa-solid fa-phone"></i>
+            <span>+977 9852075322 For Appointment</span>
+        </span>
+
+        <span class="social">
+            <i id="facebook" class="fa-brands fa-facebook"></i>
+            <i id="linkedin" class="fa-brands fa-linkedin"></i>
+            <i id="instagram" class="fa-brands fa-instagram"></i>
+        </span>
+    </header>
     <!-- Nav Bar -->
-    <div class="navbar">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
+    <nav class="navbar">
+        <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-feat" id="navbarcollapse">
-            <div class="navbar-nav">
-                <a href="p-lunia.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="team.html" class="nav-item nav-link">Team</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </button> -->
+        <ul>
+            <li> <a href="index.html" class="nav-item nav-link active">Home</a>
+            </li>
+            <li> <a href="about.html" class="nav-item nav-link">About</a>
+            </li>
+            <li> <a href="service.html" class="nav-item nav-link">Service</a>
+            </li>
+            <li> <a href="team.html" class="nav-item nav-link">Team</a>
+            </li>
+            <li> <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- main part -->
+    <div class="main-container">
+        <p>Get In Touch</p>
+        <h2>Get in touch for any queries</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3571.938136096418!2d87.280028!3d26.457723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74473a64d13b%3A0x64bafdce8a4eeb50!2sCA.%20Piyush%20Lunia%2C%20P.%20Lunia%20%26%20Associates!5e0!3m2!1sen!2snp!4v1738480925688!5m2!1sen!2snp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="items">
+            <div class="container-items">
+                <div class="container-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="container-text">
+                    <h3>Our Head Office</h3>
+                    <p>Hanuman Das Marg, Biratnagar 56613</p>
+                </div>
+            </div>
+            <div class="container-items">
+                <div class="container-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="container-text">
+                    <h3>Call for appointment</h3>
+                    <p>+977 9874563254</p>
+                </div>
+            </div>
+            <div class="container-items">
+                <div class="container-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="container-text">
+                    <h3>Email for Information</h3>
+                    <p>contact@p-lunia.com</p>
+                </div>
             </div>
         </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3571.938136096418!2d87.280028!3d26.457723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74473a64d13b%3A0x64bafdce8a4eeb50!2sCA.%20Piyush%20Lunia%2C%20P.%20Lunia%20%26%20Associates!5e0!3m2!1sen!2snp!4v1738480925688!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <!-- footer-part -->
     <div class="footer">
         <div class="container">
@@ -154,8 +107,7 @@
                     <a href="https://np.linkedin.com/company/p-lunia-associates"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="footer-link">
-            </div>
+            <div class="gap"></div>
             <div class="footer-newsletter">
                 <h2>Newsletter</h2>
                 <p>
@@ -169,6 +121,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container copyright">
             <p>
                 © <span id="currentYear">2025</span>
