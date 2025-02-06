@@ -15,7 +15,7 @@ body{
 .time{
     padding: 5px 15px;
     margin-left: 3em;
-     border-left: 1px solid #f1fbff;
+    border-left: 1px solid #f1fbff;
     border-right: 1px solid #f1fbff;
 }
 .num{
@@ -68,6 +68,50 @@ body{
     background: #092a49;
     color: #ffffff;
   }
+  .details{
+    display: flex;
+    margin-left: 250px;
+  }
+  .heading{
+    margin-left: 300px;
+  }
+  .container-items{
+    display: flex;
+    border: 1px solid rgb(164, 162, 162);
+    margin: 10px;
+    padding: 10px;
+  }
+  .heading h2{
+    color: #092a49;
+  }
+  .container-items .container-icon{
+    border: 1px solid rgb(164, 162, 162);
+    /* margin: 10px; */
+    margin-top: 30px;
+    margin-left: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px; */
+    padding: 25px;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    /* justify-content: center;
+    text-align: center; */
+    color: #0796fe;
+  }
+  .container-items .container-text{
+    padding: 10px;
+  }
+  .map{
+    /* margin-top: 0px; */
+    margin-bottom: 60px;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+  iframe{
+    border-radius: 10px;
+  }
   a{
     color: #f6f1f1;
     text-decoration: none;
@@ -82,7 +126,7 @@ body{
     position: relative;
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 255px;
   }
   .footer-contact p{
     margin-top: 0;
@@ -134,8 +178,23 @@ body{
     transition: 0.3s;
 }
 .footer-newsletter{
-    text-align: left;
-    padding-right: 15px;
+    /* text-align: left; */
+   margin-bottom: 20px;
+    padding-right: 205px;
+}
+.copyright{
+    display: flex;
+    background: #092a49;
+    color: #767272;
+    padding-left: 250px;
+    border-top: 1px solid #203f4b;
+
+}
+.copyright a{
+    color: #eeeeee;
+}
+.copyright .final{
+    padding-left: 470px;
 }
 
 
