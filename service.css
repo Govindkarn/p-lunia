@@ -65,6 +65,36 @@ body{
 nav ul li a:hover {
   color: rgb(131, 77, 246);
 }
+/* Main-Container */
+.main{
+  margin-left: 240px;
+  margin-bottom: 50px;
+}
+.main h2,h3{
+  color: #092a49;
+}
+.main .detail .row{
+  display: flex;
+}
+.main .detail .row .service{
+  border: 1px solid rgb(219, 212, 212);
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+}
+.main .detail .row .service .txt{
+  padding: 15px;
+
+}
+.main .detail .row .service:hover{
+  /* transition: 0.3s; */
+  background-color: #ebf7ff;
+  box-shadow: 0 0 30px rgba(74, 9, 9, 0.1);
+  border: #ebf7ff;
+}
 /* footer-part */
 .fab{
   margin-right: 15px;
@@ -157,6 +187,7 @@ nav ul li a:hover {
 }
 .copyright a{
   color: #eeeeee;
+  text-decoration: none;
 }
 .copyright .final{
   padding-left: 470px;
