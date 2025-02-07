@@ -115,12 +115,12 @@ body{
     text-decoration: none;
     background-color: transparent;
   }
+    /* footer-part */
   .fab{
     margin-right: 15px;
     font-size: 18px;
     color: #eeeeee;
   }
-  /* footer-part */
   .container{
     display: flex;
     background: #092a49;
