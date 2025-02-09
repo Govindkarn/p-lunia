@@ -66,12 +66,12 @@ nav ul li a:hover {
   color: rgb(131, 77, 246);
 }
 /* Main section */
-.main{
+.main .about{
   display: flex;
   margin-top: 90px;
   margin-left: 250px;
 }
-.main .image .img1 img{
+.main .about .image .img1 img{
   height: 300px;
   width: 350px;
   border-radius: 20px;
@@ -88,6 +88,49 @@ nav ul li a:hover {
   margin-left: 120px;
   margin-right: 150px;
 }
+.main .vismis{
+  text-align: center;
+}
+.main .vismis .btn button{
+  padding: 15px;
+  margin: 5px;
+  font-size: 15px;
+}
+.main .vismis .btn button:hover{
+  color: #ffffff;
+  background-color: #0796fe;
+}
+.main .vision{
+  display: flex;
+  margin-left: 250px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+.main .vision img{
+  width: 500px;
+}
+.main .mission{
+  display: flex;
+  margin-left: 250px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+.main .mission img{
+  width: 500px;
+}
+.main .prop{
+  display: flex;
+  margin-left: 250px;
+  margin-right: 150px;
+}
+.main .prop img{
+  width: 400px;
+  margin: 50px;
+  left: 0;
+  border: 30px solid;
+  border-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0.5%, rgba(0, 0, 0, 0.1) 0.5%, rgba(0, 0, 0, 0.1) 1%) 30;
+}
+
 /* footer-part */
 .fab{
   margin-right: 15px;
@@ -168,7 +211,7 @@ nav ul li a:hover {
  margin-bottom: 20px;
  padding-right: 205px;
  line-height: 25px;
-
+ width: 2000px;
 }
 .copyright{
   display: flex;
