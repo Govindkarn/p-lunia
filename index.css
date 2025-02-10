@@ -65,6 +65,13 @@ body{
 nav ul li a:hover {
   color: rgb(131, 77, 246);
 }
+/* main-container */
+.main-container .box{
+  display: flex;
+}
+.main-container .our-feature{
+  display: flex;
+}
 /* footer-part */
 .fab{
   margin-right: 15px;

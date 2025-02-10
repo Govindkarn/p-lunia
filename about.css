@@ -211,6 +211,7 @@ nav ul li a:hover {
  margin-bottom: 20px;
  padding-right: 205px;
  line-height: 25px;
+ /* do this */
  width: 2000px;
 }
 .copyright{
