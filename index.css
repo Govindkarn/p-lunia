@@ -141,6 +141,23 @@ nav ul li a:hover {
   background-color: #767272;
   color: #ebf7ff;
 }
+.main-container .client{
+  margin-left: 170px;
+}
+.main-container .client .arrow{
+  display: flex;
+  margin-left: 500px;
+  font-size: 25px;
+  color: #0796fe;
+}
+.main-container .client .arrow i{
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.main-container .client .arrow i:hover{
+  color: #1d2434;
+  cursor: pointer;
+}
 /* footer-part */
 .fab{
   margin-right: 15px;
@@ -221,6 +238,7 @@ nav ul li a:hover {
  margin-bottom: 20px;
  padding-right: 205px;
  line-height: 25px;
+ width: 2000px;
 
 }
 .copyright{
