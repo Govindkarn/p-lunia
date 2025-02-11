@@ -124,6 +124,23 @@ nav ul li a:hover {
   box-shadow: 0 0 30px rgba(74, 9, 9, 0.1);
   border: #ebf7ff;
 }
+.main-container .view a{
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgb(147, 146, 146);
+  color: rgb(84, 82, 82);
+  border-radius: 5px;
+  padding: 10px;
+}
+.main-container .view{
+  margin-left: 170px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.main-container .view a:hover{
+  background-color: #767272;
+  color: #ebf7ff;
+}
 /* footer-part */
 .fab{
   margin-right: 15px;
