@@ -47,6 +47,7 @@ body{
   background-color: #092a49;
   width: 100%;
   top: 0px;
+  z-index: 5;
 }
 .navbar ul {
   
