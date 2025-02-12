@@ -66,6 +66,9 @@ body{
 nav ul li a:hover {
   color: rgb(131, 77, 246);
 }
+nav ul li a.active{
+  color: #0796fe;
+}
 /* main section */
 .main{
   margin-bottom: 50px;
@@ -197,6 +200,7 @@ nav ul li a:hover {
 }
 .copyright a{
   color: #eeeeee;
+  text-decoration: none;
 }
 .copyright .final{
   padding-left: 470px;

@@ -65,6 +65,9 @@ body{
 nav ul li a:hover {
   color: rgb(131, 77, 246);
 }
+nav ul li a.active{
+  color: #0796fe;
+}
 /* main-container */
 .main-container .box{
   display: flex;
@@ -106,7 +109,7 @@ nav ul li a:hover {
   width: 150px;
   height: 0;
   bottom: 130px;
-    
+   
 }
 .main-container .consult{
   margin-left: 170px;
@@ -281,6 +284,7 @@ nav ul li a:hover {
 }
 .copyright a{
   color: #eeeeee;
+  text-decoration: none;
 }
 .copyright .final{
   padding-left: 470px;
