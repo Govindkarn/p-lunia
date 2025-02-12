@@ -249,6 +249,24 @@ nav ul li a.active{
   font-weight: 400;
   background-color: #ffffff;
 }
+.footer .container .footer-contact h2::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  bottom: 79%;
+  left: 44.5%;
+  background: #0796fe;
+}
+.footer .container .footer-newsletter h2::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  top: 2422px;
+  left: 60%;
+  background: #0796fe;
+}
 .footer .footer-newsletter .btn {
   position: absolute;
   top: 8px;

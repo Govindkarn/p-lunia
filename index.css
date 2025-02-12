@@ -209,6 +209,15 @@ nav ul li a.active{
   padding-right: 15px;
   padding-left: 255px;
 }
+.footer .container .footer-contact h2::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  bottom: 79%;
+  left: 44.5%;
+  background: #0796fe;
+}
 .footer-social i:hover{
   color: #0796fe;
 }
@@ -247,6 +256,15 @@ nav ul li a.active{
   line-height: 1.5;
   font-weight: 400;
   background-color: #ffffff;
+}
+.footer .container .footer-newsletter h2::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 3px;
+  top: 1822px;
+  left: 60%;
+  background: #0796fe;
 }
 .footer .footer-newsletter .btn {
   position: absolute;
