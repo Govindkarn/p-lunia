@@ -94,6 +94,33 @@ nav ul li a.active{
   margin-right: 150px;
   display: flex;
 }
+.main-container .our-feature .text .icons{
+  display: flex;
+}
+.main-container .our-feature .text .icons .icon i{
+ color: #0796fe;
+ font-size: 17px;
+}
+.main-container .our-feature .text .icons .icon {
+  padding-right: 10px;
+}
+.main-container .our-feature .text .icons .icon p{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 500;
+}
+.main-container .our-feature .text .icons .icon #user{
+  padding-right: 10px;
+}
+.main-container .our-feature .text .icons .icon #users{
+  padding-right: 10px;
+}
+.main-container .our-feature .text .icons .icon #check{
+  padding-right: 10px;
+}
+.main-container .our-feature .text .icons .icon #running{
+  padding-right: 10px;
+}
 .main-container .our-feature img{
   margin: 20px;
   height: 350px;
