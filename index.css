@@ -90,7 +90,7 @@ nav ul li a.active{
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }
 .main-container .our-feature{
-  margin-left: 150px;
+  margin-left: 190px;
   margin-right: 150px;
   display: flex;
 }
@@ -128,6 +128,12 @@ nav ul li a.active{
   border: 30px solid;
   border-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0.5%, rgba(0, 0, 0, 0.1) 0.5%, rgba(0, 0, 0, 0.1) 1%) 30;
 }
+.main-container .our-feature .text {
+  width: 500px;
+}
+.main-container .our-feature .text p{
+  line-height: 20px;
+}
 .main-container .our-feature .text h2::before {
   content: "";
   position:absolute;
@@ -139,7 +145,7 @@ nav ul li a.active{
    
 }
 .main-container .consult{
-  margin-left: 170px;
+  margin-left: 210px;
   margin-top: 50px;
 }
 .main-container .consult h2::before {
@@ -183,7 +189,7 @@ nav ul li a.active{
   padding: 10px;
 }
 .main-container .view{
-  margin-left: 170px;
+  margin-left: 210px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -192,7 +198,8 @@ nav ul li a.active{
   color: #ebf7ff;
 }
 .main-container .client{
-  margin-left: 170px;
+  margin-left: 210px;
+  margin-right: 150px;
 }
 .main-container .client h2::before {
   content: "";
@@ -211,12 +218,20 @@ nav ul li a.active{
   color: #0796fe;
 }
 .main-container .client .arrow i{
-  margin-left: 50px;
+  margin-left: 40px;
   margin-bottom: 50px;
 }
 .main-container .client .arrow i:hover{
   color: #1d2434;
   cursor: pointer;
+}
+.main-container .client .company{
+  margin-left: 28px;
+}
+.main-container .client .company img{
+  width: 115px;
+  height: 115px;
+  padding: 20px;
 }
 /* footer-part */
 .fab{
@@ -288,8 +303,8 @@ nav ul li a.active{
   position: absolute;
   content: "";
   width: 70px;
-  height: 3px;
-  top: 1822px;
+  height: 2px;
+  top: 1983px;
   left: 60%;
   background: #0796fe;
 }
