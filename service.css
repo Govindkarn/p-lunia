@@ -123,8 +123,13 @@ nav ul li a.active{
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   .main .detail .row .service {
-      width: 90%; /* Full width for smaller screens */
-      margin: 10px auto; /* Center with margin */
+      width: 90%; 
+      margin: 10px auto; 
+  }
+}
+@media (max-width: 1500px){
+  .main .heading{
+    margin: 25px;
   }
 }
 
@@ -175,31 +180,12 @@ nav ul li a.active{
   padding-right: 15px;
   padding-left: 15px;
 }
-.form{
-  position: relative;
-  width: 100%;
-  display: block;
-}
-.footer input{
-  height: 60px;
-  border: 2px solid #1d2434;
-  border-radius: 2rem;
-}
-.form-control{
-  display: block;
-  width: 100%;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: #ffffff;
-}
 .footer .container .footer-newsletter h2::after {
   position: absolute;
   content: "";
   width: 70px;
   height: 2px;
-  top: 129%;
+  top: 128%;
   left: 60%;
   background: #0796fe;
 }
@@ -228,6 +214,25 @@ nav ul li a.active{
  line-height: 25px;
  width: 2000px;
 
+}
+.form{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.footer input{
+  height: 60px;
+  border: 2px solid #1d2434;
+  border-radius: 2rem;
+}
+.form-control{
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #ffffff;
 }
 .copyright {
   display: flex;
