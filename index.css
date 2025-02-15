@@ -85,10 +85,7 @@ nav ul li a.active {
 }
 
 /* main-container */
-/* .main-container .carousel-container img{
-  height: 666px;
-  width: 1513px;
-} */
+
 .main-container .box {
   display: flex;
   margin-left: 190px;
@@ -432,23 +429,4 @@ nav ul li a.active {
 }
 
 
-.footer .arr {
-  display: flex;
-  padding: 13px;
-  background-color: #0796fe;
-  /* text-align: center; */
-  /* width: 55px;
-  height: 55px; */
-  /* line-height: 1; */
-  font-size: 22px;
-  /* right: 150px;
-  bottom: 0px; */
-  z-index: 9;
-  /* display flex ani flex end */
-  /* margin-left: 1300px; */
-  /* margin-bottom: 20px; */
-}
 
-.footer .arr .back-to-top {
-  justify-content: flex-end;
-}

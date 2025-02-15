@@ -346,17 +346,27 @@ nav ul li a.active {
   display: flex;
   background: #092a49;
   color: #767272;
-  padding-left: 250px;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically center items */
+  padding: 10px; /* General padding around the container */
   border-top: 1px solid #203f4b;
-
 }
+
 
 .copyright a {
   color: #eeeeee;
   text-decoration: none;
 }
 
-.copyright .final {
-  padding-left: 470px;
-
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px; /* Add padding on the sides */
+}
+@media (max-width: 600px) {
+  .copyright {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+    padding: 10px 0; /* Adjust padding */
+  }
 }
