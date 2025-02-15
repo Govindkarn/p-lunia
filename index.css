@@ -423,6 +423,13 @@ nav ul li a.active {
   justify-content: space-around;
   padding: 0 20px; /* Add padding on the sides */
 }
+@media (max-width: 600px) {
+  .copyright {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+    padding: 10px 0; /* Adjust padding */
+  }
+}
 
 
 .footer .arr {
