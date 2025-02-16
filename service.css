@@ -191,7 +191,7 @@ nav ul li a.active{
 }
 
 /* Media Query for Responsiveness */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .footer-contact {
     padding-left: 15px; 
   }
@@ -264,7 +264,7 @@ nav ul li a.active{
   background-color: #ffffff;
 }
 /* Media Query for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .footer .container {
     flex-direction: column; 
     padding: 20px 15px; 

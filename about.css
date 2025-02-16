@@ -29,7 +29,7 @@ body {
 }
 
 .social {
-  margin-left: 44em;
+  margin-left: auto; /* Use auto margin to push social icons to the right */
   padding: 5px 13px;
 }
 
@@ -57,12 +57,11 @@ body {
   position: sticky;
   background-color: #092a49;
   width: 100%;
-  top: 0px;
+  top: 0;
   z-index: 5;
 }
 
 .navbar ul {
-
   list-style-type: none;
   margin: 0;
   display: flex;
@@ -83,6 +82,17 @@ nav ul li a:hover {
 
 nav ul li a.active {
   color: #0796fe;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 850px) {
+  .top-bar {
+    display: none; /* Hide the top bar */
+  }
+
+  .navbar li {
+    text-align: center; /* Center align navbar items */
+  }
 }
 
 /* Main section */
@@ -243,12 +253,16 @@ nav ul li a.active {
 .footer-contact {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 255px;
+  padding: 0 15px; 
+  padding-left: 255px; 
 }
 
 .footer-social i:hover {
   color: #0796fe;
+}
+
+.footer .container .footer-contact h2 {
+  position: relative; 
 }
 
 .footer-contact p {
@@ -264,11 +278,56 @@ nav ul li a.active {
   line-height: 1;
 }
 
+/* Media Query for Responsiveness */
+@media (max-width: 950px) {
+  .footer-contact {
+    padding-left: 15px; 
+  }
+
+  .footer-contact h2::after {
+    width: 50px; 
+  }
+
+  .container {
+    flex-direction: column; 
+    padding-top: 40px; 
+  }
+} 
 .gap {
   position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 10%;
+  padding: 0 15px; 
+}
+
+.footer .container .footer-newsletter h2 {
+  position: relative; 
+}
+ 
+.footer .footer-newsletter .btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 44px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #092a49;
+  background: none;
+  border-radius: 2rem;
+  border: 2px solid #092a49;
+  transition: 0.3s;
+}
+.footer .footer-newsletter .btn:hover {
+  background-color: #092a49;
+  color: #9aacfb;
+}
+
+.footer-newsletter {
+  margin-bottom: 20px;
+  padding: 0 15px; 
+  line-height: 25px;
+  margin-right: 15%;
+  margin-left: 10px;
 }
 
 .form {
@@ -292,63 +351,28 @@ nav ul li a.active {
   font-weight: 400;
   background-color: #ffffff;
 }
+/* Media Query for Responsiveness */
+@media (max-width: 950px) {
+  .footer .container {
+    flex-direction: column; 
+    padding: 20px 15px; 
+  }
 
-.footer .container .footer-contact h2::after {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 2px;
-  bottom: 79%;
-  left: 44.5%;
-  background: #0796fe;
+  .footer-newsletter {
+    padding: 0; 
+  }
+
+  .footer .footer-newsletter .btn {
+    top: 10px; 
+ }
 }
-
-.footer .container .footer-newsletter h2::after {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 2px;
-  top: 2422px;
-  left: 60%;
-  background: #0796fe;
-}
-
-.footer .footer-newsletter .btn {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  height: 44px;
-  padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #092a49;
-  background: none;
-  border-radius: 2rem;
-  border: 2px solid #092a49;
-  transition: 0.3s;
-}
-
-.footer .footer-newsletter .btn:hover {
-  background-color: #092a49;
-  color: #9aacfb;
-}
-
-.footer-newsletter {
-  /* text-align: left; */
-  margin-bottom: 20px;
-  padding-right: 205px;
-  line-height: 25px;
-  /* do this */
-  width: 2000px;
-}
-
 .copyright {
   display: flex;
   background: #092a49;
   color: #767272;
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Vertically center items */
-  padding: 10px; /* General padding around the container */
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px; 
   border-top: 1px solid #203f4b;
 }
 
@@ -361,12 +385,13 @@ nav ul li a.active {
 .copyright {
   display: flex;
   justify-content: space-around;
-  padding: 0 20px; /* Add padding on the sides */
+  padding: 0 20px; 
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .copyright {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items */
-    padding: 10px 0; /* Adjust padding */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px 0; 
   }
 }
+
