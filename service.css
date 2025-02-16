@@ -207,7 +207,7 @@ nav ul li a.active{
 } 
 .gap {
   position: relative;
-  width: 100%;
+  width: 10%;
   padding: 0 15px; 
 }
 
@@ -238,6 +238,8 @@ nav ul li a.active{
   margin-bottom: 20px;
   padding: 0 15px; 
   line-height: 25px;
+  margin-right: 15%;
+  margin-left: 10px;
 }
 
 .form {
