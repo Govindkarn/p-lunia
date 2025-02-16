@@ -146,7 +146,7 @@ iframe {
 a {
   color: #f6f1f1;
   text-decoration: none;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 /* Media Query for Smaller Screens */
@@ -161,7 +161,6 @@ a {
     width: 95%; 
   }
 }
-
 
 /* footer-part */
 .fab {
