@@ -1,9 +1,8 @@
-body {
+body{
   font-family: "Montserrat", serif;
   margin: 0;
   padding: 0;
 }
-
 /* .top-bar */
 .top-bar {
   height: 28px;
@@ -29,10 +28,9 @@ body {
 }
 
 .social {
-  margin-left: auto; /* Use auto margin to push social icons to the right */
+  margin-left: auto; 
   padding: 5px 13px;
 }
-
 #instagram {
   padding: 5px 15px;
   border-left: 1px solid #f1fbff;
@@ -51,49 +49,94 @@ body {
   border-left: 1px solid #f1fbff;
 }
 
+/* Hide the top bar on smaller screens */
+@media (max-width: 900px) {
+  .top-bar {
+    display: none; /* Hide the top bar */
+  }
+}
 /* .navbar */
-.navbar {
-  overflow: hidden;
-  position: sticky;
-  background-color: #092a49;
+nav {
+  height: 50px;
   width: 100%;
+  background-color: #092a49;
+  position: sticky;
   top: 0;
-  z-index: 5;
 }
 
-.navbar ul {
+nav ul {
   list-style-type: none;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 2rem;
-}
-
-.navbar li a {
-  text-decoration: none;
-  color: white;
   float: right;
-  padding: 20px;
+  margin-right: 20px;
 }
 
-nav ul li a:hover {
-  color: rgb(131, 77, 246);
+nav ul li {
+  display: inline-block;
+  line-height: 1px;
+  margin: 0 5px;
+  padding: 5px;
 }
 
-nav ul li a.active {
+nav ul li a {
+  color: white;
+  font-size: 17px;
+}
+
+a.active {
   color: #0796fe;
 }
 
-@media (max-width: 850px) {
-  .top-bar {
-    display: none; 
-  }
-
-  .navbar li {
-    text-align: center; 
-  }
+a:hover {
+  color: lightblue;
 }
 
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 858px) {
+
+  .checkbtn {
+    display: block;
+    font-size: 20px;
+  }
+
+  ul {
+
+    box-sizing: border-box;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: #092a49;
+    top: 34px;
+    left: -100%;
+    transition: top 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+    line-height: 8px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
 /* Main section */
 .main .about {
   display: flex;
