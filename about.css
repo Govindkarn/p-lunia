@@ -29,7 +29,7 @@ body{
 
 .social {
   margin-left: auto; 
-  padding: 5px 13px;
+  padding: 5px 33px;
 }
 #instagram {
   padding: 5px 15px;
@@ -62,6 +62,7 @@ nav {
   background-color: #092a49;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 nav ul {

@@ -44,6 +44,56 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!-- Home page card -->
+    <section class="slider-home">
+        <div class="slider">
+          <div class="slider-img">
+            <img src="img/index/1.jpg" alt="home page" >
+          </div>
+          <div class="slidertext">
+            <h2 style="color: white">
+              Empowering Businesses Through Financial Clarity
+            </h2>
+            <p style="color: white">
+              We provide essential services, turning complex financial data into
+              clear insights for business success.
+            </p>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-img">
+            <img src="img/index/2.jpg" alt="home page" >
+          </div>
+  
+          <div class="slidertext">
+            <h2 style="color: rgb(255, 255, 255)">
+              Navigating Financial Landscapes
+            </h2>
+            <p style="color: white">
+              We expertly guide businesses through complex financial environments,
+              ensuring compliance and strategic growth.
+            </p>
+          </div>
+        </div>
+  
+        <div class="slider">
+          <div class="slider-img">
+            <img src="img/index/3.jpg" alt="home page" />
+          </div>
+  
+          <div class="slidertext">
+            <h2 style="color: rgb(255, 255, 255)">
+              Transforming Data into Decisions
+            </h2>
+            <p style="color: white">
+              We analyze financial data to deliver actionablr insights, empowering
+              businesses to make informed desision for their future.
+            </p>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </section>
     <!-- Main-Container -->
     <div class="main-container">
         <div class="carousel-container"></div>
@@ -213,6 +263,31 @@
             </div>
         </div>
     </footer>
+        <!-- javascript -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slider");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex - 1].style.display = "block";
+            }
+          </script>
 </body>
 
 </html>
